@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BMS かんじドリル</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1000" />
+    <link rel="stylesheet" type="text/css" href="./newcss.css" />
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="./js/jquery.mousewheel.js"></script>
+    <script
+      type="text/javascript"
+      src="http://typesquare.com/accessor/script/typesquare.js?qSGPfVY8sZU%3D"
+      charset="utf-8"
+    ></script>
+  </head>
+  <body>
+    <div id="wrap">
+      <div class="inner tate">
+        <div id="midashi">
+          <div class="num corner gothic">０</div>
+          <div class="title corner gothic">ＢＭＳかんじドリル</div>
+          <div class="point gothic yoko" style="position: relative">
+            <span
+              style="
+                font-size: 0.5em;
+                right: 5px;
+                position: absolute;
+                bottom: 0;
+              "
+              >てん</span
+            >
+          </div>
+          <div class="nin gothic yoko" style="position: relative">
+            <span
+              style="
+                font-size: 0.5em;
+                right: 5px;
+                position: absolute;
+                bottom: 0;
+              "
+              >にん</span
+            >
+          </div>
+          <a href="./index.html"
+            ><div class="back gothic corner yoko" style="position: relative">
+              表紙へ
+            </div></a
+          >
+        </div>
+
+        <div
+          style="clear: both; padding: 10px; padding-right: 20px"
+          class="mincho"
+          id="contents"
+        >
+          <p class="h">●イベント概要</p>
+          <p class="topic">
+            <a href="./kanji.html">小学校一年生で習う漢字八十個</a
+            >のなかから好きな漢字を<b>ひとつ</b>選び、その漢字をタイトルにしたＢＭＳを作るイベントです。
+          </p>
+
+          <div style="width: 100px">
+            <a href="https://venue.bmssearch.net/1"
+              ><div class="waku">イ</div>
+              <div class="waku" style="border-top: none">べ</div>
+              <div class="waku" style="border-top: none">ン</div>
+              <div class="waku" style="border-top: none">ト</div>
+              <div class="waku" style="border-top: none">会</div>
+              <div class="waku" style="border-top: none">場</div></a
+            >
+          </div>
+          <div style="width: 100px; margin-right: 40px">
+            <a
+              href="https://drive.google.com/open?id=0Bx5WxQLWV4fec1NBUFZvdUMzSEU"
+              ><div class="waku">パ</div>
+              <div class="waku" style="border-top: none">ッ</div>
+              <div class="waku" style="border-top: none">ケ</div>
+              <div class="waku" style="border-top: none">ー</div>
+              <div class="waku" style="border-top: none">ジ</div></a
+            >
+          </div>
+          <p class="topic" style="margin-right: 0px">
+            ※八月二日 00:00 ダウンロード版<br />解凍すると１ＧＢほどになります。
+          </p>
+
+          <div style="width: 100px; margin-right: 40px">
+            <a href="./result.html"
+              ><div class="waku">結</div>
+              <div class="waku" style="border-top: none">果</div>
+              <div class="waku" style="border-top: none">と</div>
+              <div class="waku" style="border-top: none">総</div>
+              <div class="waku" style="border-top: none">評</div></a
+            >
+          </div>
+
+          <p class="h" style="clear: both">●かいさい期間</p>
+          <p class="topic">
+            登録　七月三十日（土）　から　三十一日（日）<br /><br />評価　<s
+              >八月一日（月）　から　十四日（日）</s
+            ><br />　　　<s>二十作品を超えたら一週間延長</s><br />
+            　　　延長しました。<br />　　　八月一日（月）　から　二十一日（日）
+          </p>
+
+          <p class="h">●<a href="./rules.html">ルール</a></p>
+          <p class="h">●<a href="./qa.html">しつもんとこたえ</a></p>
+          <p class="h">●れんらくさき</p>
+          <p class="topic">
+            主催：q/stol<br /><br />Twitter(<a href="https://twitter.com/q_stol"
+              >@q_stol</a
+            >)<br />
+            ハッシュタグ
+            <a
+              href="https://twitter.com/search?f=tweets&vertical=default&q=%23KANJI_BMS&src=typd"
+              >#KANJI_BMS</a
+            ><br /><br />
+            メール <a href="mailto:mail@qstol.info">mail@qstol.info</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      $(function () {
+        $("#wrap").scrollLeft($("#wrap")[0].scrollWidth);
+        //スクロールスピード
+        var speed = -30;
+        //マウスホイールで横移動
+        $("html").mousewheel(function (event, mov) {
+          //ie firefox
+          $(this).scrollLeft($(this).scrollLeft() - mov * speed);
+          //webkit
+          $("#wrap").scrollLeft($("#wrap").scrollLeft() - mov * speed);
+          return false; //縦スクロール不可
+        });
+        $("a[href^=#]").click(function () {
+          var speed = 400; // ミリ秒
+          var href = $(this).attr("href");
+          var target = $(href == "#" || href == "" ? "html" : href);
+          var position = target.offset().left; //targetの位置を取得
+          $("html, body").animate({ scrollLeft: position }, speed, "swing");
+          return false;
+        });
+      });
+    </script>
+  </body>
+</html>

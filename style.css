@@ -1,0 +1,259 @@
+#contents {
+  overflow: hidden;
+}
+
+#wrapper {
+  box-shadow: 5px 5px 10px;
+}
+
+div.section {
+  background: #fff;
+  padding: 20px 20px;
+  width: 960px;
+  height: 560px;
+  margin: 0px;
+  background-image: url(./paper.jpg);
+  background-size: cover;
+
+  overflow: auto;
+  font-size: 1.4em;
+  line-height: 1.6em;
+  float: right;
+  writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl; /* IE用      */
+  -moz-writing-mode: vertical-rl; /* firefox用 */
+  -webkit-writing-mode: vertical-rl; /* chrome用  */
+  -o-writing-mode: vertical-rl; /* opera用   */
+}
+
+.yoko {
+  writing-mode: lr-tb;
+  writing-mode: horizontal-tb;
+  -ms-writing-mode: lr-tb; /* IE用      */
+  -moz-writing-mode: horizontal-tb; /* firefox用 */
+  -webkit-writing-mode: horizontal-tb; /* chrome用  */
+  -o-writing-mode: horizontal-tb; /* opera用   */
+}
+
+html,
+body {
+  height: 100%;
+} /*高さ100%に指定*/
+
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  min-width: 1000px; /*中央配置するボックスの横幅*/
+  min-height: 600px; /*中央配置するボックス縦幅*/
+  background-image: url(./back.jpg);
+  background-size: cover;
+}
+
+.centerMiddle {
+  margin: -300px 0 0 -500px; /*縦横の半分をネガティブマージンでずらす*/
+  position: absolute; /*body要素に対して絶対配置*/
+  top: 50%; /*上端を中央に*/
+  left: 50%; /*左端を中央に*/
+  width: 1000px; /*横幅*/
+  height: 600px; /*縦幅*/
+  background-color: #fff;
+  overflow: auto;
+}
+
+.gothic {
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "游ゴシック",
+    "Yu Gothic", "游ゴシック体", "YuGothic", "Meiryo UI", "メイリオ", Meiryo,
+    "ＭＳ ゴシック", "MS Gothic", sans-serif;
+}
+.mincho {
+  font-family: "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3",
+    "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "HGS明朝E", "HG明朝E",
+    "ＭＳ 明朝", "MS Mincho", serif;
+}
+
+b {
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "游ゴシック",
+    "Yu Gothic", "游ゴシック体", "YuGothic", "Meiryo UI", "メイリオ", Meiryo,
+    "ＭＳ ゴシック", "MS Gothic", sans-serif;
+}
+
+.num {
+  color: #fff;
+  background-color: #c00;
+  width: 80px;
+  height: 80px;
+  float: left;
+  margin: 5px;
+  line-height: 80px;
+  font-weight: bold;
+  font-size: 67px;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "游ゴシック",
+    "Yu Gothic", "游ゴシック体", "YuGothic", "Meiryo UI", "メイリオ", Meiryo,
+    "ＭＳ ゴシック", "MS Gothic", sans-serif;
+
+  border-radius: 8px; /* CSS3草案 */
+  -webkit-border-radius: 8px; /* Safari,Google Chrome用 */
+  -moz-border-radius: 8px; /* Firefox用 */
+}
+
+.titl {
+  color: #000;
+  border: solid 2px #1ac;
+  width: 76px;
+  height: 300px;
+  float: left;
+  margin: 5px;
+  padding-top: 15px;
+  line-height: 74px;
+  font-size: 1.4em;
+  font-weight: bold;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "游ゴシック",
+    "Yu Gothic", "游ゴシック体", "YuGothic", "Meiryo UI", "メイリオ", Meiryo,
+    "ＭＳ ゴシック", "MS Gothic", sans-serif;
+
+  border-radius: 8px; /* CSS3草案 */
+  -webkit-border-radius: 8px; /* Safari,Google Chrome用 */
+  -moz-border-radius: 8px; /* Firefox用 */
+}
+
+.point {
+  color: #000;
+  border: solid 2px #1ac;
+  border-bottom: 0px;
+  width: 71px;
+  height: 38px;
+  float: left;
+  margin: 0px 5px;
+  padding-left: 5px;
+  font-size: 1.2em;
+  font-weight: bold;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "游ゴシック",
+    "Yu Gothic", "游ゴシック体", "YuGothic", "Meiryo UI", "メイリオ", Meiryo,
+    "ＭＳ ゴシック", "MS Gothic", sans-serif;
+
+  border-radius: 8px 8px 0px 0px; /* CSS3草案 */
+  -webkit-border-radius: 8px 8px 0px 0px; /* Safari,Google Chrome用 */
+  -moz-border-radius: 8px 8px 0px 0px; /* Firefox用 */
+
+  writing-mode: lr-tb;
+  writing-mode: horizontal-tb;
+  -ms-writing-mode: lr-tb; /* IE用      */
+  -moz-writing-mode: horizontal-tb; /* firefox用 */
+  -webkit-writing-mode: horizontal-tb; /* chrome用  */
+  -o-writing-mode: horizontal-tb; /* opera用   */
+}
+.nin {
+  color: #000;
+  border: solid 2px #1ac;
+  border-top: dotted 2px #1ac;
+  width: 71px;
+  height: 38px;
+  float: left;
+  margin: 0px 5px;
+  font-size: 1.2em;
+  padding-left: 5px;
+  font-weight: bold;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "游ゴシック",
+    "Yu Gothic", "游ゴシック体", "YuGothic", "Meiryo UI", "メイリオ", Meiryo,
+    "ＭＳ ゴシック", "MS Gothic", sans-serif;
+
+  border-radius: 0px 0px 8px 8px; /* CSS3草案 */
+  -webkit-border-radius: 0px 0px 8px 8px; /* Safari,Google Chrome用 */
+  -moz-border-radius: 0px 0px 8px 8px; /* Firefox用 */
+
+  writing-mode: lr-tb;
+  writing-mode: horizontal-tb;
+  -ms-writing-mode: lr-tb; /* IE用      */
+  -moz-writing-mode: horizontal-tb; /* firefox用 */
+  -webkit-writing-mode: horizontal-tb; /* chrome用  */
+  -o-writing-mode: horizontal-tb; /* opera用   */
+}
+
+.back {
+  color: #000;
+  background-color: #ffd900;
+  border: solid 2px #1ac;
+  width: 76px;
+  height: 28px;
+  float: left;
+  text-align: center;
+  line-height: 28px;
+  margin: 5px;
+  font-size: 0.8em;
+  font-weight: bold;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "游ゴシック",
+    "Yu Gothic", "游ゴシック体", "YuGothic", "Meiryo UI", "メイリオ", Meiryo,
+    "ＭＳ ゴシック", "MS Gothic", sans-serif;
+
+  border-radius: 8px; /* CSS3草案 */
+  -webkit-border-radius: 8px; /* Safari,Google Chrome用 */
+  -moz-border-radius: 8px; /* Firefox用 */
+
+  writing-mode: lr-tb;
+  writing-mode: horizontal-tb;
+  -ms-writing-mode: lr-tb; /* IE用      */
+  -moz-writing-mode: horizontal-tb; /* firefox用 */
+  -webkit-writing-mode: horizontal-tb; /* chrome用  */
+  -o-writing-mode: horizontal-tb; /* opera用   */
+}
+
+.topics {
+  padding-top: 2em;
+  text-indent: -1em;
+}
+
+.topics2 {
+  padding-top: 3em;
+  text-indent: -2em;
+}
+
+.topic {
+  padding-top: 1em;
+}
+
+a.sen {
+  color: #000;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "游ゴシック",
+    "Yu Gothic", "游ゴシック体", "YuGothic", "Meiryo UI", "メイリオ", Meiryo,
+    "ＭＳ ゴシック", "MS Gothic", sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+  border-right: solid 2px #ff6666;
+}
+
+.h {
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "游ゴシック",
+    "Yu Gothic", "游ゴシック体", "YuGothic", "Meiryo UI", "メイリオ", Meiryo,
+    "ＭＳ ゴシック", "MS Gothic", sans-serif;
+  font-weight: bold;
+}
+
+.waku {
+  font-family: "GJ Kyoukasho ICA Regular";
+  color: #ccc;
+  background-image: url(./guide.png);
+  background-size: cover;
+  border: solid 2px #555;
+  width: 80px;
+  height: 80px;
+  font-size: 80px;
+  float: left;
+  line-height: 80px;
+  margin: 0px;
+}
+
+.waku1 {
+  color: #222;
+  font-family: "GJ Kyoukasho ICA Regular";
+  background-image: url(guide.png);
+  background-size: cover;
+  border: solid 2px #555;
+  width: 80px;
+  height: 80px;
+  font-size: 80px;
+  float: left;
+  line-height: 80px;
+  margin: 7px;
+}

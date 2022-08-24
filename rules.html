@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>BMSかんじドリル</title>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/jquery.mousewheel.js"></script>
+<link rel="stylesheet" type="text/css" href="./style.css"/>
+</head>
+<body>
+<div id="wrapper" class="centerMiddle">
+<div id="contents" class="mincho">
+    <div id="s05" class="section">
+
+
+	<p class="num">０</p>
+	<p class="titl">ルール</p>
+	<p class="point" style="position:relative;"><span style="font-size:0.5em;right:5px;position:absolute;bottom:0;">てん</span></p>
+	<p class="nin" style="position:relative;"><span style="font-size:0.5em;right:5px;position:absolute;bottom:0;">にん</span></p>
+	<a href="./indx.html"><p class="back" style="position:relative;">もくじ</p></a>
+
+        <p style="clear:both;">
+	<br><br>
+	<span class="h">●ＢＭＳをつくるひと</span><br>
+	<p class="topics">①<a href="./kanji.html" class="sen">小学校一年生で習う漢字八十個</a>のなかから、すきな漢字を<b>ひとつ</b>選びましょう。（掲載先による違いを防ぐため、<a href="./kanji.html" class="sen">リンク先</a>の八十文字とします）</p>
+	<p class="topics">②選んだ漢字を曲のタイトルにしましょう。サブタイトルなどをつけてはいけません。</p>
+	<p class="topics">③一人一曲までです。</p>
+	<p class="topics">④今まで公開したことのないオリジナル曲のみです。</p>
+	<p class="topics">⑤投稿されたＢＭＳはパッケージに収録されます。収録されたくない場合は事前にお知らせください。</p>
+	<p class="topics">⑥投稿されたＢＭＳは同時に<a href="http://bmssearch.net/" target="_blank" class="sen">ＢＭＳ　Ｓｅａｒｃｈ</a>に登録されます。</p>
+	<p class="topics">⑦投稿されたＢＭＳはパッケージとは別に、別サーバーに再アップロードされます。再アップロードされたくない方は事前にお知らせください。</p>
+	<p class="topics">⑧ＢＲＳ規格を守りましょう。<br><a href='http://qstol.sakura.ne.jp/BRS/BRS/001.html' target='_blank'><img src='http://qstol.sakura.ne.jp/BRS/BRS/001.png' title='BRS ver.001 に準拠するBMSに限る' width='40'></a> <a href='http://qstol.sakura.ne.jp/BRS/BRS/one.html' target='_blank'><img src='http://qstol.sakura.ne.jp/BRS/BRS/one.png' title='一人一曲のみ' width='40'></a> <a href='http://qstol.sakura.ne.jp/BRS/BRS/org.html' target='_blank'><img src='http://qstol.sakura.ne.jp/BRS/BRS/org.png' title='オリジナル楽曲のみ可能' width='40'></a></p>
+<br>
+	<span class="h">●感想をかくひと</span><br>
+	<p class="topics">①「たいへんよくできました（３点）」「よくできました（２点）」「がんばりました（１点）」「がんばりましょう（０点）」のいずれかの得点を入れましょう。</p>
+
+	<p class="topics">②曲名に合ったＢＭＳになっているか考えたうえで感想を書きましょう。</p>
+	<p class="topics">③合計点がもっとも高かったひとが一等賞です。</p>
+	<p class="topics">④わるくちを書いてはいけません。インプレのＢＲＳ規格も守りましょう。<a href='http://qstol.sakura.ne.jp/BRS/BRS/001.html' target='_blank'><img src='http://qstol.sakura.ne.jp/BRS/BRS/001.png' title='BRS ver.001 に準拠するBMSに限る' width='40'></a></p>
+
+	</p>
+
+
+    </div>
+<!-- /#contents --></div>
+<!-- /#wrapper --></div>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script type="text/javascript" src="./js/jquery.mousewheel.js"></script>
+<script type="text/javascript">
+$(function() {
+    //コンテンツの横サイズ
+    var cont = $('#contents');
+    var contW = $('.section').outerWidth(true) * $('div',cont ).length;
+    cont.css('width', contW);
+    //スクロールスピード
+    var speed = 50;
+    //マウスホイールで横移動
+    $('html').mousewheel(function(event, mov) {
+        //ie firefox
+        $(this).scrollLeft($(this).scrollLeft() + mov * speed);
+        //webkit
+        $('#s05').scrollLeft($('#s05').scrollLeft() + mov * speed);
+        return false;   //縦スクロール不可
+    });
+});
+</script>
+</body>
+</html>

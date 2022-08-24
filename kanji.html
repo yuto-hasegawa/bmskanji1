@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>BMSかんじドリル</title>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jquery.mousewheel.js"></script>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script
+      type="text/javascript"
+      src="http://typesquare.com/accessor/script/typesquare.js?qSGPfVY8sZU%3D"
+      charset="utf-8"
+    ></script>
+  </head>
+  <body>
+    <div id="wrapper" class="centerMiddle">
+      <div id="contents" class="mincho">
+        <div id="s05" class="section">
+          <p class="num">０</p>
+          <p class="titl">一年生で習う漢字</p>
+          <p class="point" style="position: relative">
+            <span
+              style="
+                font-size: 0.5em;
+                right: 5px;
+                position: absolute;
+                bottom: 0;
+              "
+              >てん</span
+            >
+          </p>
+          <p class="nin" style="position: relative">
+            <span
+              style="
+                font-size: 0.5em;
+                right: 5px;
+                position: absolute;
+                bottom: 0;
+              "
+              >にん</span
+            >
+          </p>
+          <a href="./indx.html"
+            ><p class="back" style="position: relative">もくじ</p></a
+          >
+
+          <br style="clear: both" />
+          <br /><br />
+
+          <p class="waku1">一</p>
+          <p class="waku1">右</p>
+          <p class="waku1">雨</p>
+          <p class="waku1">円</p>
+          <p class="waku1">王</p>
+          <p class="waku1">音</p>
+          <p class="waku1">下</p>
+          <p class="waku1">火</p>
+          <p class="waku1">花</p>
+          <p class="waku1">貝</p>
+
+          <p class="waku1">学</p>
+          <p class="waku1">気</p>
+          <p class="waku1">九</p>
+          <p class="waku1">休</p>
+          <p class="waku1">玉</p>
+          <p class="waku1">金</p>
+          <p class="waku1">空</p>
+          <p class="waku1">月</p>
+          <p class="waku1">犬</p>
+          <p class="waku1">見</p>
+
+          <p class="waku1">五</p>
+          <p class="waku1">口</p>
+          <p class="waku1">校</p>
+          <p class="waku1">左</p>
+          <p class="waku1">三</p>
+          <p class="waku1">山</p>
+          <p class="waku1">子</p>
+          <p class="waku1">四</p>
+          <p class="waku1">糸</p>
+          <p class="waku1">字</p>
+
+          <p class="waku1">耳</p>
+          <p class="waku1">七</p>
+          <p class="waku1">車</p>
+          <p class="waku1">手</p>
+          <p class="waku1">十</p>
+          <p class="waku1">出</p>
+          <p class="waku1">女</p>
+          <p class="waku1">小</p>
+          <p class="waku1">上</p>
+          <p class="waku1">森</p>
+
+          <p class="waku1">人</p>
+          <p class="waku1">水</p>
+          <p class="waku1">正</p>
+          <p class="waku1">生</p>
+          <p class="waku1">青</p>
+          <p class="waku1">夕</p>
+          <p class="waku1">石</p>
+          <p class="waku1">赤</p>
+          <p class="waku1">千</p>
+          <p class="waku1">川</p>
+
+          <p class="waku1">先</p>
+          <p class="waku1">早</p>
+          <p class="waku1">草</p>
+          <p class="waku1">足</p>
+          <p class="waku1">村</p>
+          <p class="waku1">大</p>
+          <p class="waku1">男</p>
+          <p class="waku1">竹</p>
+          <p class="waku1">中</p>
+          <p class="waku1">虫</p>
+
+          <p class="waku1">町</p>
+          <p class="waku1">天</p>
+          <p class="waku1">田</p>
+          <p class="waku1">土</p>
+          <p class="waku1">二</p>
+          <p class="waku1">日</p>
+          <p class="waku1">入</p>
+          <p class="waku1">年</p>
+          <p class="waku1">白</p>
+          <p class="waku1">八</p>
+
+          <p class="waku1">百</p>
+          <p class="waku1">文</p>
+          <p class="waku1">木</p>
+          <p class="waku1">本</p>
+          <p class="waku1">名</p>
+          <p class="waku1">目</p>
+          <p class="waku1">立</p>
+          <p class="waku1">力</p>
+          <p class="waku1">林</p>
+          <p class="waku1">六</p>
+        </div>
+        <!-- /#contents -->
+      </div>
+      <!-- /#wrapper -->
+    </div>
+    <script
+      type="text/javascript"
+      src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"
+    ></script>
+    <script type="text/javascript" src="./js/jquery.mousewheel.js"></script>
+    <script type="text/javascript">
+      $(function () {
+        //コンテンツの横サイズ
+        var cont = $("#contents");
+        var contW = $(".section").outerWidth(true) * $("div", cont).length;
+        cont.css("width", contW);
+        //スクロールスピード
+        var speed = 50;
+        //マウスホイールで横移動
+        $("html").mousewheel(function (event, mov) {
+          //ie firefox
+          $(this).scrollLeft($(this).scrollLeft() + mov * speed);
+          //webkit
+          $("#s05").scrollLeft($("#s05").scrollLeft() + mov * speed);
+          return false; //縦スクロール不可
+        });
+      });
+    </script>
+  </body>
+</html>

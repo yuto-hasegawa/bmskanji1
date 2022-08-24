@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>BMSかんじドリル</title>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/jquery.mousewheel.js"></script>
+<link rel="stylesheet" type="text/css" href="./style.css"/>
+</head>
+<body>
+<div id="wrapper" class="centerMiddle">
+<div id="contents" class="mincho">
+    <div id="s05" class="section">
+
+
+	<p class="num">０</p>
+	<p class="titl">しつもんとこたえ</p>
+	<p class="point" style="position:relative;"><span style="font-size:0.5em;right:5px;position:absolute;bottom:0;">てん</span></p>
+	<p class="nin" style="position:relative;"><span style="font-size:0.5em;right:5px;position:absolute;bottom:0;">にん</span></p>
+	<a href="./indx.html"><p class="back" style="position:relative;">もくじ</p></a>
+
+        <p style="clear:both;"></p>
+	<br><br>
+	<p class="topics2">
+	Ｑ．ジャンルに制限はありますか？</p>
+	<p class="topics2">
+	Ａ．タイトル以外に制限はありません。ただし、タイトルに合った曲をつくるように心がけましょう。
+	</p>
+	<br>
+	<p class="topics2">
+	Ｑ．ほかの参加者と曲名が被ってもいいですか？</p>
+	<p class="topics2">
+	Ａ．曲名が被っても大丈夫です。より漢字に合った曲を目指しましょう。
+	</p>
+	<br>
+	<p class="topics2">
+	Ｑ．参加資格制限はありますか？</p>
+	<p class="topics2">
+	Ａ．ありません。ただし、自分が読めない漢字をタイトルにつけるのはやめましょう。
+	</p>
+	
+
+
+    </div>
+<!-- /#contents --></div>
+<!-- /#wrapper --></div>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script type="text/javascript" src="./js/jquery.mousewheel.js"></script>
+<script type="text/javascript">
+$(function() {
+    //コンテンツの横サイズ
+    var cont = $('#contents');
+    var contW = $('.section').outerWidth(true) * $('div',cont ).length;
+    cont.css('width', contW);
+    //スクロールスピード
+    var speed = 50;
+    //マウスホイールで横移動
+    $('html').mousewheel(function(event, mov) {
+        //ie firefox
+        $(this).scrollLeft($(this).scrollLeft() + mov * speed);
+        //webkit
+        $('#s05').scrollLeft($('#s05').scrollLeft() + mov * speed);
+        return false;   //縦スクロール不可
+    });
+});
+</script>
+</body>
+</html>

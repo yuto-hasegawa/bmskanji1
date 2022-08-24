@@ -1,0 +1,29 @@
+.BR_normal{
+    border:solid 5px #ccc;
+}
+
+.BR_dragenter{
+    border:solid 5px #AA0000;
+}
+
+.BR_inprogress{
+    border:solid 5px #00DEF7;
+}
+
+.BR_both{
+    background-image: url(./resources/both.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.BR_only{
+    background-image: url(./resources/only.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.BR_not{
+    background-image: url(resources/not.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
